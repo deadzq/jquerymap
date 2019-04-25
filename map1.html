@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/core.css">
+		<script>
+			var script=document.createElement("script");
+			script.type="text/javascript";
+			script.src="jquery.js";
+			document.getElementsByTagName('head')[0].appendChild(script); 
+			script.onload=function(){方法内容}//js加载完成执行方法
+		</script>
+	</head>
+	<body>
+	    <div id="container">
+	    	<div class="map-wrapper">
+				<!--<p>自定义悬浮提示框</p>-->
+				<div class="aaaa">
+					<div id="map-09" class="map-box">
+					<p>aaa</p>
+					</div>
+					<p class="aaa">aaa</p>
+					<p class="aaa1">aaa</p>
+					
+				</div>
+				
+			</div>
+		</div>
+		<div class="mask"></div>
+	</body>
+	
+	<style>
+		.mask{
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 90;
+			background: rgba(0, 0, 0, 0.8);
+			display: none;
+		}
+			.aa{
+				width: 300px;
+				height: 200px;
+				/*background: yellow;*/
+				border: 1px solid red;
+				display: none;
+				position: fixed;
+				top: 100px;
+				left: 200px;
+				z-index: 99;
+			}
+			.map-box p{
+				position: absolute;
+				top: 0;
+				left: 50%;
+				z-index: 999;
+			}
+			.aaa{
+				position: absolute;
+				top: 20%;
+				left: 30%;
+				z-index: 100;
+			}
+			
+			.aaa1{
+				position: absolute;
+				top: 25%;
+				left: 30%;
+				z-index: 100;
+			}
+			.aaaa{
+				position: relative;
+			}
+			.aa1{
+				border: 1px solid blue;
+				display: none;
+				top: 20%;
+				left: 30%;
+				
+			}
+		</style>
+		<div class="aa aa2"   id="id"></div>
+		<div class="aa aa1" id="id1"></div>
+		<script src="http://www.jq22.com/jquery/jquery-3.3.1.js"></script>
+		<script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.js"></script>
+		<script src="js/jsMap-3.1.0.min.js"></script>
+		<script src="js/core1.js"></script>
+</html>
